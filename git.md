@@ -79,5 +79,32 @@ Bạn đang sửa code, sợ pull về bị conflict code
 - git featch origin => lấy code mới nhất brach về trước
 - git log HEAD..origin/develop => xem có code gì mới và quyết định xem nên merge không
 - không bao giờ git pull khi có code chưa commit
+- Nếu có code sửa nên đưa code vào stash: git stash
+- git rebase origin để tối ưu lại lịch sử commit
+- git stash pop để lấy lại code đang thực hiện sửa
+
+```
+
+### 4. Merge và Rebase dùng cái nào ?
+
+Trả lời
+
+```
+* Merge:
+- Giữ lịch sử commit thật
+- Có merge commit đầy đủ
+* Rebase 
+- Lịch sử commit thẳng, sạch
+- Có sửa lại lịch sử commit
+* Nguyên tắc
+- Branch cá nhân rebase
+- Branch dùng chung thì merge
+
+* Bài toàn thực tế:
+1 Brach đang code nhưng có nhiều commit lặt vặt, tóm gọn nhiều commit thành 1
+
+- git checkout ten-branch: Chuyển sang brach đang code
+- git fetch origin: lấy code mới nhất từ remote
+- git rebase origin/develop: merge code develop vào nhánh và rebase lại đúng lịch sử
 
 ```
