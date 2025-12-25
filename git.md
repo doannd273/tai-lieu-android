@@ -105,6 +105,6 @@ Trả lời
 
 - git checkout ten-branch: Chuyển sang brach đang code
 - git fetch origin: lấy code mới nhất từ remote
-- git rebase origin/develop: merge code develop vào nhánh và rebase lại đúng lịch sử
+- git rebase origin/develop: merge code develop vào nhánh và rebase lại đúng lịch sử.
 
 ```
